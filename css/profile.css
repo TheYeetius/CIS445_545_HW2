@@ -1,3 +1,112 @@
 body{
-    background-color: aqua;
+    background-color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #39393de8;
+}
+body,html {
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color: rgba(79, 236, 236, 0.856);
+    box-sizing: border-box;
+}
+
+p{
+    line-height: 1.1;
+}
+
+h1{
+    height: 50px;
+    width: 100%;
+    padding:1px;
+    margin:1px;
+    background-color: rgba(79, 236, 236, 0.856);
+}
+
+#ThomasImage img{
+float: left;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+#border-paragraph{
+    border-style: solid;
+    border-color: #C2D1B1;
+    max-width: 750px;
+    background-color: rgb(81, 148, 126);
+}
+
+.grid-container{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    max-width: 80%;
+}
+
+.grid-item{
+    grid-row: inherit;
+    grid-column: inherit;
+    background-color: aquamarine;
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 10px;
+}
+
+#item-1-1{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#item-1-2{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#item-1-3{
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#item-2-1{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#item-span-1-2-3{
+    grid-row: 1;
+    grid-column: 2 / span 3;
+    max-height: 50px;
+    padding-bottom: 10px;
+    margin: 0;
+    align-items: start;
+}
+
+#item-span-2-1-2{
+    grid-row: 1 / span 2;
+    grid-column: 1;
+}
+
+#item-span-2-2-2{
+    grid-row: 2;
+    grid-column: 2 / span 3;
+}
+
+#item-span-3-3-3{
+    grid-row: 3;
+    grid-column: 2 / span 3;
+}
+
+#item-span-4-4-4{
+    grid-row: 4;
+    grid-column: 2 / span 3;
+}
+
+
+#text-align-left{
+    text-align: left;
 }
